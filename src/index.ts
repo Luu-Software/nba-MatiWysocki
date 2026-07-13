@@ -6,8 +6,18 @@ let roster: number[] = [];
 
 export function estaEnRoster(roster: number[], id: number): boolean {
   let esta: boolean = false; // COMPLETAR
+  let valorTemp: number = 0; valorTemp = valor temporal
+  let NumIdentidad = id;
+
+  while (roster.length > valorTemp){
+    if (roster[valorTemp]=== NumIdentidad){
+      esta = true;
+      }
+      valorTemp++;
+    }
   return esta;
 }
+
 
 export function agregarAlRoster(roster: number[], id: number): number[] {
   let nuevoRoster: number[] = []; // COMPLETAR
