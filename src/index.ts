@@ -14,19 +14,22 @@ export function estaEnRoster(roster: number[], id: number): boolean {
 
 export function agregarAlRoster(roster: number[], id: number): number[] {
   let nuevoRoster: number[] = []; // COMPLETAR
-  let nuevoRoster: number[] = [...roster];
-  
-  nuevoRoster.push(id);
+  let nuevoRoster: number[] = [....roster];
 
+  nuevoRoster.push(id);
+  
   return nuevoRoster;
 }
 
 export function quitarDelRoster(roster: number[], id: number): number[] {
   let nuevoRoster: number[] = []; 
-  estaEnRoster()
-  agregarAlRoster()
-  quitarDelRoster()
   // COMPLETAR
+  for (let jugador of roster) {
+    if (jugador ! ==  id){
+  nuevoRoster.push(jugador);
+    }
+  }
+
   return nuevoRoster;
 }
 
